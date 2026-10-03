@@ -1,0 +1,10 @@
+# Entorno virtual (muy pesado; se recrea con requirements.txt)
+.venv/
+
+# Archivos temporales de Python y Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Configuración local de VS Code
+.vscode/
