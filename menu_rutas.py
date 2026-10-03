@@ -57,8 +57,6 @@ def construir_matriz(puntos):
 n = len(puntos)
 matriz = construir_matriz(puntos)
 
-ruta_inicial = list(range(1, n))
-
 def distancia_total(ruta):
     recorrido = [0] + ruta + [0]
     total_distancia = 0
@@ -208,6 +206,7 @@ while True:
             continue
         n = len(puntos)
         matriz = construir_matriz(puntos)
+        ruta_inicial = list(range(1, n))
         d_inicial = distancia_total(ruta_inicial)
         d_final, hist_opt, ruta_opt = correr_ga(SEMILLA)
         print(f"Mejor distancia encontrada: {d_final:.2f} km")
